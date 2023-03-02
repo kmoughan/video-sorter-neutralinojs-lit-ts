@@ -1,0 +1,9 @@
+{
+    "files.exclude": {
+        ".vscode": true,
+        "*lock.yaml": true,
+        "favicon.ico": true,
+        "node_modules": true,
+        "README.md": true
+    }
+}

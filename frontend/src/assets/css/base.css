@@ -1,0 +1,33 @@
+/*
+* These are the only styles applied globally which cross into shadow roots
+*/
+@font-face {
+    font-family: "Poppins";
+    src: url("../fonts/Poppins-Regular.woff2") format("woff2");
+    font-display: block;
+}
+
+@font-face {
+    font-family: "svgsheet";
+    src: url("../fonts/svgsheet.woff2") format("woff2");
+    font-display: block;
+}
+
+* {
+    font-family: "Poppins";
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--tx-color);
+    font-size: 16px;
+    font-weight: 400;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+input[type="text"] {
+    padding: 6px;
+}

@@ -1,0 +1,64 @@
+/* dark mode styles are default */
+
+:root {
+    --bg-color: #3e4446;
+    --tx-color: #dcd7c9;
+    --border-color: #282c35;
+    /* panels are block elements within the body */
+    --panel-bg-color: #6e9199; /* also used for toasts */
+    --panel-tx-color: #ebfdff;
+    /* dialog colors */
+    --dialog-bg-color: #575757;
+    --dialog-tx-color: #dcd7c9;
+    --dialog-h2-color: #f3f3f3;
+    --dialog-closex-color: #f3f3f3;
+    /* nav bar */
+    --navbar-tx-color: #f3f3f3;
+    --navbar-border-color: #f3f3f3;
+    /* tabs */
+    --tabs-border-color: #282c35;
+    --tabs-active-bg-color: #b3afaf;
+    --tabs-active-tx-color: #222;
+    --tabs-inactive-bg-color: #575757;
+    --tabs-inactive-tx-color: #f3f3f3;
+}
+.light {
+    --bg-color: #dcd7c9;
+    --tx-color: #575757;
+    --border-color: #282c35;
+    /* panels are block elements within the body */
+    --panel-bg-color: #4f8693;
+    --panel-tx-color: #ebfdff;
+    /* dialog colors */
+    --dialog-bg-color: #dcd7c9;
+    --dialog-tx-color: #575757;
+    --dialog-h2-color: #222;
+    --dialog-closex-color: #222;
+    /* nav bar */
+    --navbar-tx-color: #222;
+    --navbar-border-color: #222;
+    /* tabs */
+    --tabs-border-color: #282c35;
+    --tabs-active-bg-color: #575757;
+    --tabs-active-tx-color: #f3f3f3;
+    --tabs-inactive-bg-color: #b3afaf;
+    --tabs-inactive-tx-color: #222;
+}
+
+:root {
+    /* buttons */
+    --btn-color-bg-1: #6ac590;
+    --btn-color-tx-1: #000;
+
+    --btn-color-bg-2: #1f2228;
+    --btn-color-tx-2: #edfbfd;
+
+    --btn-color-bg-3: #eb5252;
+    --btn-color-tx-3: #000;
+
+    --btn-color-bg-4: #00bcd4;
+    --btn-color-tx-4: #000;
+
+    --btn-color-bg-5: #eee;
+    --btn-color-tx-5: #000;
+}

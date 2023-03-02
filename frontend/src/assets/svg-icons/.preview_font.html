@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>font</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <!-- <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script> -->
+        <style>
+            @font-face {
+                font-family: "svgsheet";
+                src: url("../fonts/svgsheet.woff2") format("woff2"), url("../fonts/svgsheet.ttf") format("truetype");
+            }
+            body {
+                background: #7e7d7d;
+
+                font-size: 16px;
+                line-height: 24px;
+                padding: 50px;
+            }
+
+            h1 {
+                font-size: 30px;
+                line-height: 45px;
+            }
+
+            li {
+                background: #f3f3f3;
+                border: 1px solid #555;
+                margin: 6px;
+                border-radius: 6px;
+                font-family: monospace;
+                font-size: 12px;
+                text-align: center;
+                display: inline-block;
+            }
+            li .icon {
+                font-family: "svgsheet", sans-serif;
+                font-size: 96px;
+                width: 108px;
+                height: 108px;
+                line-height: 108px;
+            }
+        </style>
+
+        <script>
+            function escapeHTML(str) {
+                return str.replace(
+                    /[&<>'"]/g,
+                    (tag) =>
+                        ({
+                            "&": "&amp;",
+                            "<": "&lt;",
+                            ">": "&gt;",
+                            "'": "&#39;",
+                            '"': "&quot;",
+                        }[tag])
+                );
+            }
+
+            function onLoaded() {
+                let o = [];
+                for (var i = 1; i < 81; i++) {
+                    let unicode = `&#xEA${String(i).padStart(2, "0")};`;
+                    o.push(`<li><div class="icon">${unicode}</div><div class="unicode">${escapeHTML(unicode)}</div></li>`);
+                }
+                document.getElementById("icons").innerHTML = o.join("");
+            }
+        </script>
+    </head>
+    <body onload="onLoaded()">
+        <p>If any icons don't fill the box, use the drag/drop batch script in this directory to remove whitespace from them</p>
+        <ul id="icons"></ul>
+    </body>
+</html>

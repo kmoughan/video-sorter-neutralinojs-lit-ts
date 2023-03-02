@@ -1,0 +1,18 @@
+{
+    "compilerOptions": {
+        "target": "es2019",
+        "module": "es2020",
+        "moduleResolution": "node",
+        "lib": ["es2019", "dom"],
+        "noUnusedLocals": false,
+        //"declaration": true,
+        //"declarationMap": true,
+        "experimentalDecorators": true,
+        "useDefineForClassFields": false,
+        "plugins": [
+            {
+                "name": "ts-lit-plugin"
+            }
+        ]
+    }
+}

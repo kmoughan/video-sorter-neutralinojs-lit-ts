@@ -1,0 +1,16 @@
+svg file here will be converted to an icon font
+
+files must be named {unicode}={name}.svg
+
+unicode value such as u0001 can be accessed in html as &#x1
+
+svg icon should have no whitespace surrounding it,
+use the drag/drop batch script in this directory to remove whitespace
+
+
+# tools
+- for svg to svgfont
+https://www.npmjs.com/package/svgicons2svgfont
+
+- svgfont to ttf and woff2
+https://www.npmjs.com/package/@hayes0724/web-font-converter

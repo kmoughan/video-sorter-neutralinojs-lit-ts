@@ -1,0 +1,31 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "git:push",
+            "type": "shell",
+            "command": "git add . ; git commit -m '${input:git_commit_msg}' ; git push --all",
+            "problemMatcher": []
+        },
+        {
+            "label": "dev:neutralino",
+            "type": "shell",
+            "command": "pnpm run dev:neutralino"
+        }
+    ],
+    "inputs": [
+        {
+            "id": "git_commit_msg",
+            "description": "Git commit message:",
+            "default": "update",
+            "type": "promptString"
+        }
+    ],
+    "presentation": {
+        //"reveal": "silent",  // only open terminal if there is an error
+        "clear": true,
+        "focus": true
+    }
+}

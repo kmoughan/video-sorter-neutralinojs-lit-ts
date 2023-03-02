@@ -1,0 +1,17 @@
+
+# Neutralinojs binaries and builds
+/bin
+/dist
+
+# Neutralinojs client (minified)
+neutralino.js
+
+# Neutralinojs related files
+.storage
+*.log
+
+node_modules
+.tmp
+
+/frontend/build/*
+!/frontend/build/neutralino.js
